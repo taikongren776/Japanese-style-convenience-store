@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#050a12" />
+  <title>雨夜のコンビニ | 星あかりマート</title>
+  <style>/*__CSS__*/</style>
+</head>
+<body>
+  <div id="app">
+    <main id="stage" aria-label="雨夜のコンビニ 3D 微缩场景">
+      <canvas id="scene"></canvas>
+    </main>
+    <div class="vignette" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="hud-brand">
+      <div class="eyebrow"><span class="star">✦</span> Rainy Night Diorama · 23:47</div>
+      <h1>雨夜のコンビニ</h1>
+      <div class="sub">星あかりマート / HOSHIAKARI MART</div>
+      <div class="mood">冷たい雨と、あたたかい灯り。</div>
+    </header>
+
+    <div id="hint" class="hint">拖拽旋转 <i></i> 滚轮缩放 <i></i> 右键平移</div>
+
+    <nav class="dock" aria-label="场景控制">
+      <div class="views">
+        <button class="view-btn is-active" type="button" data-preset="hero">全景</button>
+        <button class="view-btn" type="button" data-preset="street">街角</button>
+        <button class="view-btn" type="button" data-preset="interior">店内</button>
+        <button class="view-btn" type="button" data-preset="top">俯瞰</button>
+        <button class="view-btn" type="button" data-preset="back">后巷</button>
+      </div>
+      <span class="sep" aria-hidden="true"></span>
+      <div class="toggles">
+        <button class="tool-btn is-on" type="button" data-action="rain">雨</button>
+        <button class="tool-btn" type="button" data-action="spin">自动旋转</button>
+        <button class="tool-btn is-on" type="button" data-action="neon">霓虹</button>
+        <button class="tool-btn icon" type="button" data-action="reset" aria-label="重置视角">↺</button>
+      </div>
+    </nav>
+
+    <button id="hideUi" class="hide-ui" type="button" aria-label="隐藏界面">◌</button>
+    <button id="showUi" class="show-ui" type="button" aria-label="显示界面">✦</button>
+    <div class="corner-mark">No. 047 / Rain Study — 1:64</div>
+    <div id="debug" class="debug"></div>
+
+    <div id="loading" class="loading" role="status" aria-live="polite">
+      <div class="loading-inner">
+        <div class="loader-star" aria-hidden="true">✦</div>
+        <h2>雨の街角を準備しています</h2>
+        <p>Building the miniature night</p>
+        <div class="loading-bar" aria-hidden="true"></div>
+      </div>
+    </div>
+
+    <div id="error" class="error" hidden>
+      <div class="error-card">
+        <h2>场景加载失败</h2>
+        <p id="errorText">当前浏览器无法启动 WebGL2。请使用最新版 Chrome / Edge 打开本文件。</p>
+      </div>
+    </div>
+  </div>
+  <script>/*__JS__*/</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+* text=auto
+
+*.blend binary
+*.blend1 binary
+*.glb binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+dist/hoshiakari-mart-rainy-night.html binary
+
+*.py text eol=lf
+*.js text eol=lf
+*.mjs text eol=lf
+*.css text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.html text eol=lf
